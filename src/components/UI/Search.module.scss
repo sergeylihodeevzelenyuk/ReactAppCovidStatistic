@@ -1,0 +1,33 @@
+@import "../../assets/Variables.scss";
+@import "../../assets/mixins.scss";
+
+.search {
+  position: relative;
+
+  &_item {
+    width: 100%;
+    min-width: 280px;
+    height: $elements-height;
+    padding: 12px 22px 12px 32px;
+    border: none;
+    outline: none;
+    @include inputAndModalHeadingFont;
+    @include searchAndLineOverlay;
+
+    &::placeholder {
+      @include inputAndModalHeadingFont;
+      color: $main-gray;
+    }
+  }
+
+  &_icon {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    width: 30px;
+    height: 30px;
+    background: url(../../assets/icons/IconSearch.svg) center center no-repeat
+      $main-white;
+  }
+}

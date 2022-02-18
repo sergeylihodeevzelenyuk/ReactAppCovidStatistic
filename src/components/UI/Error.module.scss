@@ -1,0 +1,8 @@
+@import "../../assets/Variables.scss";
+@import "../../assets/mixins.scss";
+
+.error {
+  text-align: center;
+  @include buttonAndParagrapfFont;
+  color: $main-gray;
+}

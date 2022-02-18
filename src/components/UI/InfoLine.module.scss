@@ -1,0 +1,70 @@
+@import "../../assets/Variables.scss";
+@import "../../assets/mixins.scss";
+
+.info {
+  display: flex;
+  min-height: $elements-height;
+  @include searchAndLineOverlay;
+  @include buttonAndParagrapfFont;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  span {
+    display: block;
+    height: 100%;
+    padding: 26px 23px;
+  }
+}
+
+.info:not(.heading):hover {
+  background-color: $transparency-gray;
+}
+
+.country {
+  border-left: 1px solid $main-gray;
+  border-right: 1px solid $main-gray;
+}
+
+.index {
+  min-width: 78px;
+  padding-left: 30px;
+}
+
+.country {
+  flex-basis: 1160px;
+  min-width: 200px;
+}
+
+.quantity {
+  flex-basis: 560px;
+  min-width: 235px;
+}
+
+.heading {
+  background-color: $main-blue;
+  color: $main-white;
+  cursor: unset;
+}
+
+.heading {
+  .country {
+    border-color: $main-white;
+  }
+}
+
+.heading {
+  .country,
+  .quantity {
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $transparency-gray;
+
+      &:not(.country) {
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+}

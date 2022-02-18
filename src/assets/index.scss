@@ -1,0 +1,14 @@
+@import "Reset.scss";
+@import "Variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: $main-font-black;
+  background: $main-white;
+}

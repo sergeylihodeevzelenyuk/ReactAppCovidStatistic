@@ -1,0 +1,40 @@
+@import "../assets/Variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &_item {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: -1;
+  }
+
+  &_content {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+    text-transform: uppercase;
+  }
+}
+
+.search_wrap {
+  flex-basis: 600px;
+}
+
+@media #{$desktop-smallest-media-query} {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+}

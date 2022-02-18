@@ -1,0 +1,19 @@
+@import "../../assets/Variables.scss";
+@import "../../assets/mixins.scss";
+
+.button {
+  padding: 11px 70px;
+  border-radius: 20px;
+  border: none;
+  background-color: $main-blue;
+  @include buttonAndParagrapfFont;
+  font-weight: 700;
+  color: $main-white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $transparency-gray;
+  }
+}
